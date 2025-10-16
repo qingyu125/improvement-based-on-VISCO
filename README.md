@@ -4,8 +4,6 @@
 
 [🌐 Project](https://visco-benchmark.github.io/) | [🤗 Dataset](https://huggingface.co/datasets/uclanlp/VISCO) | [📖 Paper](https://arxiv.org/abs/2412.02172)
 
-<h3>🎉Accepted to CVPR 2025!🎉</h3>
-
 <br/>
 
 Outline:
@@ -84,15 +82,9 @@ Download the data from [huggingface](https://huggingface.co/datasets/uclanlp/VIS
 
 Run `python infer_critique.py --input test.jsonl --output OUTPUT_FILE`
 
-* If you're using proprietary LVLMs such as OpenAI, Anthropic and Gemini models, use `--model XXX` to specify the model and use `--api_key` to provide your API key. The proprietary models we test include `gpt-4o-2024-08-06`, `claude-3-5-sonnet-20240620` and `gemini-1.5-pro`
+* If you're using proprietary LVLMs such as OpenAI, Anthropic and Gemini models, use `--model XXX` to specify the model and use `--api_key` to provide your API key. The proprietary models we test include `qwen-vl-max`
 * If you're using open LVLMs, you can locally launch an OpenAI compatible server, and then use the same script. Then, you should specify the following arguments: set `--base_url` as your server URL, `--model` as your model name or `auto`, and set `--api_key` to your API key. An example of how to launch OpenAI compatible server with vllm is [here](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html).
 * Alternatively, you can specify `--model XXX` and add `--launch_locally BACKEND` argument to the script, so the script will automatically launch a server and make requests to the launched server. Supported backend include `lmdeploy`, `vllm` and `sglang`. Note that **this requires you to properly install the backend packages first**. The framework we use for evaluating each model is as follows:
-
-| Framework | Model(s) |
-|---|---|
-| vllm | Qwen2-VL, Molmo, Llama-3.2, NVLM |
-| lmdeploy | InternVL2, DeepSeek-VL, LLaVA-v1.5, LLaVA-v1.6, Qwen-VL, Prometheus-Vision |
-| sglang | LLaVA-OV, LLaVA-Critic |
 
 * If you want to use your custom inference code, please rewrite `def infer` in `utils.py`.
 
@@ -130,7 +122,7 @@ python evaluate.py YOUR_OUTPUT_FILE --input test.jsonl --task correction
 ```
 
 ## Citation
-Please cite our paper if this repository inspires your work!
+Please cite the paper if this repository inspires your work!
 
 ```
 @inproceedings{wu2025visco,
@@ -141,3 +133,4 @@ Please cite our paper if this repository inspires your work!
   year={2025}
 }
 ```
+
