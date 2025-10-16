@@ -1,5 +1,6 @@
 
 
 def myapi():
-    api_key='sk-526875381076442a88b3d82bb661ad16'
+    api_key='your_api_key'
+
     return api_key
