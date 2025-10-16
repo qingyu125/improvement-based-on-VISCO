@@ -1,0 +1,7 @@
+anthropic>=0.36.1
+google-generativeai>=0.8.3
+openai>=1.41.0
+Levenshtein>=0.26.0
+word2number>=1.1
+tabulate
+api-key：sk-526875381076442a88b3d82bb661ad16
