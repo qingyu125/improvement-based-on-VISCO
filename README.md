@@ -1,8 +1,4 @@
-# VISCO
-
-**Benchmarking Fine-Grained Critique and Correction Towards Self-Improvement in Visual Reasoning**
-
-[🌐 Project](https://visco-benchmark.github.io/) | [🤗 Dataset](https://huggingface.co/datasets/uclanlp/VISCO) | [📖 Paper](https://arxiv.org/abs/2412.02172)
+# improvement based on VISCO
 
 <br/>
 
@@ -121,16 +117,4 @@ python evaluate.py YOUR_OUTPUT_FILE --input test.jsonl --task critique
 python evaluate.py YOUR_OUTPUT_FILE --input test.jsonl --task correction
 ```
 
-## Citation
-Please cite the paper if this repository inspires your work!
-
-```
-@inproceedings{wu2025visco,
-  title={Visco: Benchmarking fine-grained critique and correction towards self-improvement in visual reasoning},
-  author={Wu, Xueqing and Ding, Yuheng and Li, Bingxuan and Lu, Pan and Yin, Da and Chang, Kai-Wei and Peng, Nanyun},
-  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
-  pages={9527--9537},
-  year={2025}
-}
-```
 
